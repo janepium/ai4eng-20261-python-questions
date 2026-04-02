@@ -1,6 +1,6 @@
-Pregunta: escalar_minmax
+# Pregunta: escalar_minmax
 
-Enunciado
+## Enunciado
 
 En una misión espacial dedicada al análisis de exoplanetas, se recolectan diversas mediciones físicas como el radio del planeta (planet_radius), la masa (planet_mass), la temperatura de la estrella (star_temperature) y la distancia a la estrella (distance_from_star).
 
@@ -8,7 +8,7 @@ Debido a limitaciones en la recolección de datos, algunos valores están incomp
 
 En este caso, se desea transformar las variables para que todas estén en el rango [0, 1], lo cual es especialmente útil para modelos sensibles a la escala.
 
-Función a implementar
+## Función a implementar
 
 Escribe una función llamada escalar_minmax(df, target_col) que realice lo siguiente:
 
@@ -17,14 +17,14 @@ Escribe una función llamada escalar_minmax(df, target_col) que realice lo sigui
 - Escale las características imputadas al rango [0, 1], utilizando MinMaxScaler de sklearn.
 - Devuelva dos arrays de numpy: la matriz X procesada y el vector y.
 
-Restricciones
+## Restricciones
 
 - La columna objetivo no debe ser transformada.
 - Deben usarse pandas, numpy y sklearn.
 - La imputación debe hacerse con strategy="mean".
 - El escalado debe realizarse con MinMaxScaler.
 
-Ejemplo
+## Ejemplo
 
 import pandas as pd
 import numpy as np
