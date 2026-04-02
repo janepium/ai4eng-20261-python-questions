@@ -46,3 +46,18 @@ def generar_caso_de_uso_limpiar_outliers():
     output_data = (X_clean, y_clean)
 
     return input_data, output_data
+
+# --- Ejemplo de uso ---
+if __name__ == "__main__":
+    entrada, salida_esperada = generar_caso_de_uso_limpiar_outliers()
+
+    print("=== INPUT (Diccionario) ===")
+    print(f"Target Column: {entrada['target_col']}")
+    print("DataFrame (primeras 5 filas con posibles NaNs y outliers):")
+    print(entrada["df"].head())
+
+    print("\n=== OUTPUT ESPERADO (Tupla de arrays) ===")
+    X_res, y_res = salida_esperada
+    print(f"Shape de X limpia: {X_res.shape}")
+    print(f"Shape de y: {y_res.shape}")
+    print("Ejemplo de primera fila limpia:", X_res[0])
