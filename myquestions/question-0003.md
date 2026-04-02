@@ -1,6 +1,6 @@
-#Pregunta: limpiar_outliers
+## Pregunta: limpiar_outliers
 
-#Enunciado
+# Enunciado
 
 En el análisis de datos de exoplanetas, es común encontrar mediciones erróneas o valores extremos (outliers) debido a errores de instrumentación o ruido en las observaciones.
 
